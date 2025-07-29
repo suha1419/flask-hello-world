@@ -81,7 +81,7 @@ def selecting():
     return response_string
     
     
-@app.route('db_drop')
+@app.route('/db_drop')
 def dropping():
     conn = psycopg.connect("postgresql://lab10_sqldb_user:uYGGisS9uXJhSDr5uX0zuNOmWZohhoZv@dpg-d240d7qdbo4c738a4hrg-a/lab10_sqldb")
     cur = conn.cursor()
